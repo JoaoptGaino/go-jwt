@@ -1,0 +1,10 @@
+version: '3'
+services:
+  go-jwt-db:
+    image: 'postgres:latest'
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER:  root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: go_jwt_db
